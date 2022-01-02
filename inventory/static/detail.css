@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: whitesmoke
+}
+
+.hedding {
+    font-size: 20px;
+    color: #ab8181;
+}
+
+.main-section {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 5%);
+}
+
+.left-side-product-box img {
+    width: 10%;
+}
+.left-side-product-box .sub-img img {
+    margin-top: 5px;
+    width: 20px;
+    height: 50px;
+}
+
+.right-side-pro-detail span {
+    font-size: 15px;
+}
+.card-img-top {
+    width: 50%;
+    height: 15vw;
+    
+}
+img {
+    max-width: 100%;
+    border: 5px solid #555;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    
+}
