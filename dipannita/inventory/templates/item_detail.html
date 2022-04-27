@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Item Detail</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+     <link rel="stylesheet" href="{% static 'detail.css' %}">
+
+
+  </head>
+
+  <body>
+	
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+                        <div class="preview-pic tab-content">
+                            <div class="tab-pane active" id="pic-1"><img src="{{product.image.url}}" /></div>
+                        </div>
+                          
+                      </div>
+                      <div class="details col-md-6">
+                          <h3 class="product-title">{{product.name}}<h4>{{product.brand}}</h4></h3>
+                          <div class="rating">
+                              <div class="stars">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                              </div>
+                              <span class="review-no">In stock</span>
+                          </div>
+                          <p class="product-description">{{product.description}}</p>
+                          <h4 class="price">current price: <span>{{product.price}}</span></h4>
+                          <h5 class="price">Discount price: <span>{{product.discount}}</span></h5>
+                          <button class="add-to-cart btn btn-default" type="button">Add to orders</button>
+                          </h5>
+                          <br></br>
+                          <div class="action">
+                            <a href="{% url 'index'%}"><button class="add-to-cart btn btn-default" type="button">Back to home</button></a>
+                              <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </body>
+  </html>
+  
